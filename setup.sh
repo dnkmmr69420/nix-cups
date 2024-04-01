@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo -i nix profile install nixpkgs#cups
+sudo -i nix profile install nixpkgs#cups nixpkgs#cups-pk-helper nixpkgs#cups-filters
 
 sudo ln -sf /nix/var/nix/profiles/default/lib/systemd/system/cups-lpd.socket /etc/systemd/system/cups-lpd.socket
 sudo ln -sf /nix/var/nix/profiles/default/lib/systemd/system/cups-lpd@.service /etc/systemd/system/cups-lpd@.service
